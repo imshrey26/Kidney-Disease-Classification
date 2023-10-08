@@ -13,7 +13,7 @@ import base64
 
 
 @ensure_annotations
-def read_yaml(path_to_yaml: Path) -> ConfigBox:
+def read_yaml(path_to_yaml: Path) -> ConfigBox: # Converts dictionary into ConfigBox format such that we can access values through keys without any indexing
     """reads yaml file and returns
 
     Args:
